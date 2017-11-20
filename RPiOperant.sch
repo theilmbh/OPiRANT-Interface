@@ -2330,25 +2330,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 <text x="0" y="-0.254" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
 </symbol>
-<symbol name="5V">
-<description>&lt;h3&gt;5V Voltage Supply&lt;/h3&gt;</description>
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<pin name="5V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
-</symbol>
 <symbol name="12V">
 <description>&lt;h3&gt;12V Voltage Supply&lt;/h3&gt;</description>
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
 <pin name="12V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
-</symbol>
-<symbol name="3.3V">
-<description>&lt;h3&gt;3.3V Voltage Supply&lt;/h3&gt;</description>
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<pin name="3.3V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 </symbol>
 </symbols>
@@ -2367,39 +2353,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 </devices>
 </deviceset>
-<deviceset name="5V" prefix="SUPPLY">
-<description>&lt;h3&gt;5V Supply Symbol&lt;/h3&gt;
-&lt;p&gt;Power supply symbol for a specifically-stated 5V source.&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="5V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="12V" prefix="SUPPLY">
 <description>&lt;h3&gt;12V Supply Symbol&lt;/h3&gt;
 &lt;p&gt;Power supply symbol for a specifically-stated 12V source.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="12V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="3.3V" prefix="SUPPLY">
-<description>&lt;h3&gt;3.3V Supply Symbol&lt;/h3&gt;
-&lt;p&gt;Power supply symbol for a specifically-stated 3.3V source.&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="3.3V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -7402,13 +7360,68 @@ DIN A3, landscape with location and doc. field</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="supply1" urn="urn:adsk.eagle:library:371">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+ GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+ Please keep in mind, that these devices are necessary for the
+ automatic wiring of the supply signals.&lt;p&gt;
+ The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+ In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+ &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="+3V3" urn="urn:adsk.eagle:symbol:26950/1" library_version="1">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+5V" urn="urn:adsk.eagle:symbol:26929/1" library_version="1">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="+3V3" urn="urn:adsk.eagle:component:26981/1" prefix="+3V3" library_version="1">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+3V3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+5V" urn="urn:adsk.eagle:component:26963/1" prefix="P+" library_version="1">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="+5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.254" drill="0">
+</class>
+<class number="1" name="PWR" width="0.8128" drill="0">
 </class>
 </classes>
 <parts>
@@ -7417,11 +7430,9 @@ DIN A3, landscape with location and doc. field</description>
 <part name="J3" library="SparkFun-Connectors" deviceset="POWER_JACK" device=""/>
 <part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="12V" device=""/>
 <part name="IC1" library="74xx-us" library_urn="urn:adsk.eagle:library:88" deviceset="74*14" device="N" package3d_urn="urn:adsk.eagle:package:2921/1" technology="LS"/>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="J4" library="SparkFun-Connectors" deviceset="CONN_02" device="2.54MM_SCREWTERM">
 <attribute name="PORT" value="HOPPER IR SENSE"/>
 </part>
@@ -7437,7 +7448,6 @@ DIN A3, landscape with location and doc. field</description>
 <part name="J14" library="SparkFun-Connectors" deviceset="CONN_02" device="2.54MM_SCREWTERM"/>
 <part name="J15" library="SparkFun-Connectors" deviceset="CONN_02" device="2.54MM_SCREWTERM"/>
 <part name="J16" library="SparkFun-Connectors" deviceset="CONN_02" device="2.54MM_SCREWTERM"/>
-<part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:25942/1" value="1k"/>
 <part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:25942/1" value="4.3k"/>
 <part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:25942/1" value="1k"/>
@@ -7453,17 +7463,11 @@ DIN A3, landscape with location and doc. field</description>
 <part name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:25942/1" value="330"/>
 <part name="R14" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:25942/1" value="330"/>
 <part name="R15" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:25942/1" value="330"/>
-<part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="SUPPLY8" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="SUPPLY9" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND8" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="SUPPLY10" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4004" device="" package3d_urn="urn:adsk.eagle:package:43336/1"/>
 <part name="SUPPLY11" library="SparkFun-PowerSymbols" deviceset="12V" device=""/>
@@ -7480,11 +7484,20 @@ DIN A3, landscape with location and doc. field</description>
 <part name="GND12" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="IC2" library="microchip" library_urn="urn:adsk.eagle:library:294" deviceset="MCP3202" device="P" package3d_urn="urn:adsk.eagle:package:20796/2"/>
 <part name="GND13" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="SUPPLY14" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="U1" library="SparkFun-Sensors" deviceset="TMP36" device="GT9"/>
 <part name="J17" library="SparkFun-Connectors" deviceset="CONN_02" device="2.54MM_SCREWTERM"/>
 <part name="J18" library="SparkFun-Connectors" deviceset="CONN_02" device="2.54MM_SCREWTERM"/>
 <part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
+<part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="+3V5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="+3V6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="+3V7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="+3V8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7503,7 +7516,6 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="J3" gate="G$1" x="-12.7" y="132.08"/>
 <instance part="GND1" gate="1" x="-2.54" y="111.76"/>
 <instance part="GND2" gate="1" x="-10.16" y="-2.54"/>
-<instance part="SUPPLY1" gate="G$1" x="-2.54" y="144.78"/>
 <instance part="SUPPLY2" gate="G$1" x="2.54" y="127"/>
 <instance part="IC1" gate="A" x="-40.64" y="86.36"/>
 <instance part="IC1" gate="B" x="-40.64" y="60.96"/>
@@ -7511,7 +7523,6 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="IC1" gate="D" x="-40.64" y="30.48"/>
 <instance part="IC1" gate="P" x="-40.64" y="86.36"/>
 <instance part="GND3" gate="1" x="-40.64" y="71.12"/>
-<instance part="SUPPLY3" gate="G$1" x="-55.88" y="147.32"/>
 <instance part="J4" gate="G$1" x="-81.28" y="83.82">
 <attribute name="PORT" x="-81.28" y="83.82" size="1.778" layer="96"/>
 </instance>
@@ -7527,7 +7538,6 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="J14" gate="G$1" x="121.92" y="78.74" rot="R180"/>
 <instance part="J15" gate="G$1" x="124.46" y="43.18" rot="R180"/>
 <instance part="J16" gate="G$1" x="124.46" y="-2.54" rot="R180"/>
-<instance part="SUPPLY4" gate="G$1" x="-45.72" y="147.32"/>
 <instance part="R1" gate="G$1" x="-60.96" y="86.36"/>
 <instance part="R2" gate="G$1" x="-71.12" y="91.44" rot="R90"/>
 <instance part="R3" gate="G$1" x="-58.42" y="60.96"/>
@@ -7543,17 +7553,11 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="R13" gate="G$1" x="101.6" y="106.68"/>
 <instance part="R14" gate="G$1" x="101.6" y="91.44"/>
 <instance part="R15" gate="G$1" x="101.6" y="78.74"/>
-<instance part="SUPPLY5" gate="G$1" x="-71.12" y="99.06"/>
-<instance part="SUPPLY6" gate="G$1" x="-68.58" y="76.2"/>
-<instance part="SUPPLY7" gate="G$1" x="-66.04" y="55.88"/>
-<instance part="SUPPLY8" gate="G$1" x="-63.5" y="40.64"/>
 <instance part="GND4" gate="1" x="-73.66" y="76.2"/>
 <instance part="GND5" gate="1" x="-73.66" y="53.34"/>
 <instance part="GND6" gate="1" x="-73.66" y="38.1"/>
 <instance part="GND7" gate="1" x="-73.66" y="22.86"/>
-<instance part="SUPPLY9" gate="G$1" x="-40.64" y="99.06"/>
 <instance part="GND8" gate="1" x="43.18" y="129.54"/>
-<instance part="SUPPLY10" gate="G$1" x="43.18" y="152.4"/>
 <instance part="GND9" gate="1" x="111.76" y="68.58"/>
 <instance part="D1" gate="1" x="93.98" y="40.64" rot="R90"/>
 <instance part="SUPPLY11" gate="G$1" x="106.68" y="55.88"/>
@@ -7570,10 +7574,19 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="GND12" gate="1" x="-55.88" y="111.76"/>
 <instance part="IC2" gate="P" x="-58.42" y="-22.86" rot="R180"/>
 <instance part="GND13" gate="1" x="-35.56" y="-38.1"/>
-<instance part="SUPPLY14" gate="G$1" x="-40.64" y="0"/>
 <instance part="U1" gate="G$1" x="-83.82" y="-25.4"/>
 <instance part="J17" gate="G$1" x="53.34" y="-48.26" rot="R90"/>
 <instance part="J18" gate="G$1" x="68.58" y="-48.26" rot="R90"/>
+<instance part="+3V1" gate="G$1" x="-45.72" y="149.86"/>
+<instance part="+3V2" gate="G$1" x="-71.12" y="101.6"/>
+<instance part="+3V3" gate="G$1" x="-68.58" y="78.74"/>
+<instance part="+3V4" gate="G$1" x="-66.04" y="58.42"/>
+<instance part="+3V5" gate="G$1" x="-63.5" y="43.18"/>
+<instance part="+3V6" gate="G$1" x="-40.64" y="2.54"/>
+<instance part="+3V7" gate="G$1" x="-40.64" y="101.6"/>
+<instance part="+3V8" gate="G$1" x="43.18" y="154.94"/>
+<instance part="P+1" gate="1" x="-55.88" y="149.86"/>
+<instance part="P+2" gate="1" x="-2.54" y="147.32"/>
 </instances>
 <busses>
 </busses>
@@ -7715,7 +7728,7 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="-35.56" y="-35.56"/>
 </segment>
 </net>
-<net name="12V" class="0">
+<net name="12V" class="1">
 <segment>
 <pinref part="J2" gate="G$1" pin="PWR"/>
 <wire x1="-10.16" y1="124.46" x2="2.54" y2="124.46" width="0.1524" layer="91"/>
@@ -7741,19 +7754,6 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="114.3" y1="7.62" x2="116.84" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="7.62" x2="116.84" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="114.3" y="7.62"/>
-</segment>
-</net>
-<net name="5V" class="0">
-<segment>
-<pinref part="J3" gate="G$1" pin="PWR"/>
-<wire x1="-10.16" y1="139.7" x2="-2.54" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="SUPPLY1" gate="G$1" pin="5V"/>
-<wire x1="-2.54" y1="139.7" x2="-2.54" y2="144.78" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY3" gate="G$1" pin="5V"/>
-<pinref part="R18" gate="G$1" pin="2"/>
-<wire x1="-55.88" y1="147.32" x2="-55.88" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -7859,72 +7859,6 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="-53.34" y1="30.48" x2="-50.8" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="3.3V" class="0">
-<segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="SUPPLY5" gate="G$1" pin="3.3V"/>
-<wire x1="-71.12" y1="96.52" x2="-71.12" y2="99.06" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R4" gate="G$1" pin="2"/>
-<pinref part="SUPPLY6" gate="G$1" pin="3.3V"/>
-<wire x1="-68.58" y1="73.66" x2="-68.58" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY7" gate="G$1" pin="3.3V"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="-66.04" y1="55.88" x2="-68.58" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY8" gate="G$1" pin="3.3V"/>
-<pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="-63.5" y1="40.64" x2="-68.58" y2="40.64" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="P" pin="VCC"/>
-<pinref part="SUPPLY9" gate="G$1" pin="3.3V"/>
-<wire x1="-40.64" y1="96.52" x2="-40.64" y2="99.06" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY10" gate="G$1" pin="3.3V"/>
-<pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="43.18" y1="152.4" x2="60.96" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="152.4" x2="78.74" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="152.4" x2="96.52" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="152.4" x2="114.3" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="152.4" x2="114.3" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="96.52" y1="149.86" x2="96.52" y2="152.4" width="0.1524" layer="91"/>
-<junction x="96.52" y="152.4"/>
-<pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="78.74" y1="149.86" x2="78.74" y2="152.4" width="0.1524" layer="91"/>
-<junction x="78.74" y="152.4"/>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="60.96" y1="149.86" x2="60.96" y2="152.4" width="0.1524" layer="91"/>
-<junction x="60.96" y="152.4"/>
-</segment>
-<segment>
-<pinref part="R18" gate="G$1" pin="1"/>
-<pinref part="R19" gate="G$1" pin="2"/>
-<wire x1="-55.88" y1="132.08" x2="-55.88" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="SUPPLY4" gate="G$1" pin="3.3V"/>
-<wire x1="-55.88" y1="129.54" x2="-55.88" y2="127" width="0.1524" layer="91"/>
-<wire x1="-45.72" y1="147.32" x2="-45.72" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="-45.72" y1="129.54" x2="-55.88" y2="129.54" width="0.1524" layer="91"/>
-<junction x="-55.88" y="129.54"/>
-</segment>
-<segment>
-<pinref part="SUPPLY14" gate="G$1" pin="3.3V"/>
-<wire x1="-40.64" y1="0" x2="-40.64" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="P" pin="VDD/VREF"/>
-<wire x1="-40.64" y1="-2.54" x2="-40.64" y2="-27.94" width="0.1524" layer="91"/>
-<wire x1="-40.64" y1="-27.94" x2="-45.72" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="VCC"/>
-<wire x1="-91.44" y1="-22.86" x2="-91.44" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="-91.44" y1="-2.54" x2="-40.64" y2="-2.54" width="0.1524" layer="91"/>
-<junction x="-40.64" y="-2.54"/>
-</segment>
-</net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="J8" gate="G$1" pin="1"/>
@@ -8001,7 +7935,7 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="33.02" y1="30.48" x2="25.4" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$23" class="0">
+<net name="N$23" class="1">
 <segment>
 <pinref part="D1" gate="1" pin="A"/>
 <wire x1="93.98" y1="38.1" x2="93.98" y2="33.02" width="0.1524" layer="91"/>
@@ -8030,7 +7964,7 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="-20.32" y1="40.64" x2="-5.08" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$26" class="0">
+<net name="N$26" class="1">
 <segment>
 <pinref part="J16" gate="G$1" pin="2"/>
 <wire x1="116.84" y1="-5.08" x2="116.84" y2="-7.62" width="0.1524" layer="91"/>
@@ -8132,6 +8066,85 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="J18" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="63.5" x2="68.58" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="63.5" x2="68.58" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+3V3" class="0">
+<segment>
+<pinref part="R18" gate="G$1" pin="1"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="-55.88" y1="132.08" x2="-55.88" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="129.54" x2="-55.88" y2="127" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="147.32" x2="-45.72" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="129.54" x2="-55.88" y2="129.54" width="0.1524" layer="91"/>
+<junction x="-55.88" y="129.54"/>
+<pinref part="+3V1" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="-71.12" y1="96.52" x2="-71.12" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="+3V2" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="-68.58" y1="73.66" x2="-68.58" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="+3V3" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="-66.04" y1="55.88" x2="-68.58" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="+3V4" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="-63.5" y1="40.64" x2="-68.58" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="+3V5" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<wire x1="-40.64" y1="0" x2="-40.64" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="P" pin="VDD/VREF"/>
+<wire x1="-40.64" y1="-2.54" x2="-40.64" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="-27.94" x2="-45.72" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="VCC"/>
+<wire x1="-91.44" y1="-22.86" x2="-91.44" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-91.44" y1="-2.54" x2="-40.64" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="-40.64" y="-2.54"/>
+<pinref part="+3V6" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="P" pin="VCC"/>
+<wire x1="-40.64" y1="96.52" x2="-40.64" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="+3V7" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="43.18" y1="152.4" x2="60.96" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="152.4" x2="78.74" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="152.4" x2="96.52" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="152.4" x2="114.3" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="152.4" x2="114.3" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="96.52" y1="149.86" x2="96.52" y2="152.4" width="0.1524" layer="91"/>
+<junction x="96.52" y="152.4"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="78.74" y1="149.86" x2="78.74" y2="152.4" width="0.1524" layer="91"/>
+<junction x="78.74" y="152.4"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="60.96" y1="149.86" x2="60.96" y2="152.4" width="0.1524" layer="91"/>
+<junction x="60.96" y="152.4"/>
+<pinref part="+3V8" gate="G$1" pin="+3V3"/>
+</segment>
+</net>
+<net name="+5V" class="1">
+<segment>
+<pinref part="R18" gate="G$1" pin="2"/>
+<wire x1="-55.88" y1="147.32" x2="-55.88" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="P+1" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="PWR"/>
+<wire x1="-10.16" y1="139.7" x2="-2.54" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="139.7" x2="-2.54" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="P+2" gate="1" pin="+5V"/>
 </segment>
 </net>
 </nets>
