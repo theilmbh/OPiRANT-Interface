@@ -6658,6 +6658,9 @@ W = angled&lt;p&gt;
 <part name="R12" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:25942/1" value="330"/>
 <part name="R21" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:25942/1" value="330"/>
 <part name="GND15" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="R22" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:25942/1" value="330"/>
+<part name="R23" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:25942/1" value="330"/>
+<part name="R39" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:25942/1" value="330"/>
 </parts>
 <sheets>
 <sheet>
@@ -6775,6 +6778,9 @@ W = angled&lt;p&gt;
 <instance part="R12" gate="G$1" x="53.34" y="187.96" rot="R180"/>
 <instance part="R21" gate="G$1" x="53.34" y="180.34" rot="R180"/>
 <instance part="GND15" gate="1" x="-218.44" y="193.04"/>
+<instance part="R22" gate="G$1" x="53.34" y="172.72" rot="R180"/>
+<instance part="R23" gate="G$1" x="53.34" y="165.1" rot="R180"/>
+<instance part="R39" gate="G$1" x="53.34" y="157.48" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -8166,6 +8172,11 @@ W = angled&lt;p&gt;
 <wire x1="-101.6" y1="144.78" x2="-101.6" y2="152.4" width="0.1524" layer="91"/>
 <label x="-101.6" y="152.4" size="1.016" layer="91" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R22" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="172.72" x2="71.12" y2="172.72" width="0.1524" layer="91"/>
+<label x="71.12" y="172.72" size="1.778" layer="91" xref="yes"/>
+</segment>
 </net>
 <net name="RGB_CUE_B" class="0">
 <segment>
@@ -8173,12 +8184,22 @@ W = angled&lt;p&gt;
 <wire x1="-99.06" y1="144.78" x2="-99.06" y2="152.4" width="0.1524" layer="91"/>
 <label x="-99.06" y="152.4" size="1.016" layer="91" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R39" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="157.48" x2="71.12" y2="157.48" width="0.1524" layer="91"/>
+<label x="71.12" y="157.48" size="1.778" layer="91" xref="yes"/>
+</segment>
 </net>
 <net name="RGB_CUE_G" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="3"/>
 <wire x1="-96.52" y1="144.78" x2="-96.52" y2="152.4" width="0.1524" layer="91"/>
 <label x="-96.52" y="152.4" size="1.016" layer="91" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R23" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="165.1" x2="71.12" y2="165.1" width="0.1524" layer="91"/>
+<label x="71.12" y="165.1" size="1.778" layer="91" xref="yes"/>
 </segment>
 </net>
 <net name="LOADCELLA+" class="0">
@@ -8452,6 +8473,33 @@ W = angled&lt;p&gt;
 <wire x1="30.48" y1="220.98" x2="30.48" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="R21" gate="G$1" pin="2"/>
 <wire x1="30.48" y1="180.34" x2="48.26" y2="180.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PWM13"/>
+<wire x1="10.16" y1="218.44" x2="27.94" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="218.44" x2="27.94" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="R22" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="172.72" x2="48.26" y2="172.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PWM14"/>
+<wire x1="10.16" y1="215.9" x2="25.4" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="215.9" x2="25.4" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="R23" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="165.1" x2="48.26" y2="165.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PWM15"/>
+<wire x1="10.16" y1="213.36" x2="22.86" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="213.36" x2="22.86" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="R39" gate="G$1" pin="2"/>
+<wire x1="22.86" y1="157.48" x2="48.26" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
