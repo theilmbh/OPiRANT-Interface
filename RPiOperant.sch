@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="8.4.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6657,6 +6657,7 @@ W = angled&lt;p&gt;
 <part name="R11" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:25942/1" value="330"/>
 <part name="R12" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:25942/1" value="330"/>
 <part name="R21" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:25942/1" value="330"/>
+<part name="GND15" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6773,6 +6774,7 @@ W = angled&lt;p&gt;
 <instance part="R11" gate="G$1" x="53.34" y="195.58" rot="R180"/>
 <instance part="R12" gate="G$1" x="53.34" y="187.96" rot="R180"/>
 <instance part="R21" gate="G$1" x="53.34" y="180.34" rot="R180"/>
+<instance part="GND15" gate="1" x="-218.44" y="193.04"/>
 </instances>
 <busses>
 </busses>
@@ -6978,6 +6980,16 @@ W = angled&lt;p&gt;
 <wire x1="-30.48" y1="238.76" x2="-35.56" y2="238.76" width="0.1524" layer="91"/>
 <wire x1="-35.56" y1="238.76" x2="-35.56" y2="233.68" width="0.1524" layer="91"/>
 <junction x="-35.56" y="233.68"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="SHIELD"/>
+<pinref part="GND15" gate="1" pin="GND"/>
+<wire x1="-226.06" y1="182.88" x2="-226.06" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="-226.06" y1="195.58" x2="-218.44" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="J4" gate="G$1" pin="SHIELD"/>
+<wire x1="-218.44" y1="195.58" x2="-208.28" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="-208.28" y1="195.58" x2="-208.28" y2="182.88" width="0.1524" layer="91"/>
+<junction x="-218.44" y="195.58"/>
 </segment>
 </net>
 <net name="12V" class="1">
