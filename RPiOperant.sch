@@ -9914,6 +9914,7 @@ See the follwing turorial for more information on this type of special footprint
 <part name="J8" library="SparkFun-Connectors" deviceset="CONN_04" device=""/>
 <part name="J9" library="SparkFun-Connectors" deviceset="CONN_02" device="3.5MM"/>
 <part name="J15" library="SparkFun-Connectors" deviceset="CONN_02" device="3.5MM"/>
+<part name="J1" library="SparkFun-Connectors" deviceset="CONN_04" device="SCREW"/>
 </parts>
 <sheets>
 <sheet>
@@ -10042,6 +10043,7 @@ See the follwing turorial for more information on this type of special footprint
 <instance part="J8" gate="G$1" x="-210.82" y="223.52" rot="R270"/>
 <instance part="J9" gate="G$1" x="-175.26" y="226.06" rot="R180"/>
 <instance part="J15" gate="G$1" x="-175.26" y="213.36" rot="R180"/>
+<instance part="J1" gate="G$1" x="-139.7" y="208.28" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -11769,28 +11771,48 @@ See the follwing turorial for more information on this type of special footprint
 <label x="124.46" y="58.42" size="1.27" layer="91" xref="yes"/>
 </segment>
 </net>
-<net name="N$25" class="0">
+<net name="AUX5" class="0">
 <segment>
-<pinref part="X2" gate="G$1" pin="7"/>
-<wire x1="-157.48" y1="144.78" x2="-157.48" y2="152.4" width="0.1524" layer="91"/>
-<label x="-157.48" y="152.4" size="1.27" layer="91" rot="R90" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="-142.24" y1="203.2" x2="-142.24" y2="190.5" width="0.1524" layer="91"/>
+<label x="-142.24" y="190.5" size="1.27" layer="91" rot="R270" xref="yes"/>
 </segment>
-</net>
-<net name="N$31" class="0">
-<segment>
-<pinref part="X2" gate="G$1" pin="6"/>
-<wire x1="-154.94" y1="144.78" x2="-154.94" y2="152.4" width="0.1524" layer="91"/>
-<label x="-154.94" y="152.4" size="1.27" layer="91" rot="R90" xref="yes"/>
-</segment>
-</net>
-<net name="N$34" class="0">
 <segment>
 <pinref part="X2" gate="G$1" pin="5"/>
 <wire x1="-152.4" y1="144.78" x2="-152.4" y2="152.4" width="0.1524" layer="91"/>
 <label x="-152.4" y="152.4" size="1.27" layer="91" rot="R90" xref="yes"/>
 </segment>
 </net>
-<net name="N$35" class="0">
+<net name="AUX6" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="-139.7" y1="203.2" x2="-139.7" y2="190.5" width="0.1524" layer="91"/>
+<label x="-139.7" y="190.5" size="1.27" layer="91" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="X2" gate="G$1" pin="6"/>
+<wire x1="-154.94" y1="144.78" x2="-154.94" y2="152.4" width="0.1524" layer="91"/>
+<label x="-154.94" y="152.4" size="1.27" layer="91" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="AUX7" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="3"/>
+<wire x1="-137.16" y1="203.2" x2="-137.16" y2="190.5" width="0.1524" layer="91"/>
+<label x="-137.16" y="190.5" size="1.27" layer="91" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="X2" gate="G$1" pin="7"/>
+<wire x1="-157.48" y1="144.78" x2="-157.48" y2="152.4" width="0.1524" layer="91"/>
+<label x="-157.48" y="152.4" size="1.27" layer="91" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="AUX8" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="4"/>
+<wire x1="-134.62" y1="203.2" x2="-134.62" y2="190.5" width="0.1524" layer="91"/>
+<label x="-134.62" y="190.5" size="1.27" layer="91" rot="R270" xref="yes"/>
+</segment>
 <segment>
 <pinref part="X2" gate="G$1" pin="14"/>
 <wire x1="-142.24" y1="129.54" x2="-142.24" y2="121.92" width="0.1524" layer="91"/>
