@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.3">
+<eagle version="8.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9786,11 +9786,11 @@ See the follwing turorial for more information on this type of special footprint
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.2032" drill="0">
 </class>
-<class number="1" name="12V" width="0.8128" drill="0">
+<class number="1" name="12V" width="0.508" drill="0">
 </class>
-<class number="2" name="5V" width="0.8128" drill="0">
+<class number="2" name="5V" width="0.508" drill="0">
 </class>
 </classes>
 <parts>
