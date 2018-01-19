@@ -12066,118 +12066,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="-3.175" y1="-3.81" x2="-1.905" y2="-2.159" layer="51"/>
 <hole x="0" y="11.176" drill="3.302"/>
 </package>
-<package name="TO220-IGO" urn="urn:adsk.eagle:footprint:39014/1" library_version="1">
-<wire x1="5.08" y1="-1.905" x2="-5.08" y2="-1.905" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="-1.905" x2="-5.08" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="1.905" x2="-5.08" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="1.905" x2="5.08" y2="-1.905" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="1.905" x2="-5.08" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="2.54" x2="8.255" y2="2.54" width="0.2032" layer="51"/>
-<wire x1="8.255" y1="2.54" x2="8.255" y2="-5.715" width="0.2032" layer="51"/>
-<wire x1="8.255" y1="-5.715" x2="9.525" y2="-5.715" width="0.2032" layer="51"/>
-<wire x1="9.525" y1="-5.715" x2="9.525" y2="3.81" width="0.2032" layer="51"/>
-<wire x1="9.525" y1="3.81" x2="-9.525" y2="3.81" width="0.2032" layer="51"/>
-<wire x1="-9.525" y1="3.81" x2="-9.525" y2="-5.715" width="0.2032" layer="51"/>
-<wire x1="-9.525" y1="-5.715" x2="-8.255" y2="-5.715" width="0.2032" layer="51"/>
-<wire x1="-8.255" y1="-5.715" x2="-8.255" y2="2.54" width="0.2032" layer="51"/>
-<wire x1="-8.255" y1="2.54" x2="-5.08" y2="2.54" width="0.2032" layer="51"/>
-<pad name="IN" x="-2.54" y="0" drill="1" diameter="1.8796" shape="square"/>
-<pad name="GND" x="0" y="0" drill="1" diameter="1.8796"/>
-<pad name="OUT" x="2.54" y="0" drill="1" diameter="1.8796"/>
-</package>
-<package name="TO-92" urn="urn:adsk.eagle:footprint:39015/1" library_version="1">
-<description>&lt;b&gt;TO 92&lt;/b&gt;</description>
-<wire x1="-2.0946" y1="-1.651" x2="-0.7863" y2="2.5485" width="0.2032" layer="21" curve="-111.098957" cap="flat"/>
-<wire x1="0.7863" y1="2.5484" x2="2.0945" y2="-1.651" width="0.2032" layer="21" curve="-111.09954" cap="flat"/>
-<wire x1="-2.0945" y1="-1.651" x2="2.0945" y2="-1.651" width="0.2032" layer="21"/>
-<wire x1="-2.6549" y1="-0.254" x2="-2.2537" y2="-0.254" width="0.2032" layer="21"/>
-<wire x1="-0.2863" y1="-0.254" x2="0.2863" y2="-0.254" width="0.2032" layer="21"/>
-<wire x1="2.2537" y1="-0.254" x2="2.6549" y2="-0.254" width="0.2032" layer="21"/>
-<pad name="3" x="1.27" y="0" drill="0.8128" diameter="1.8796"/>
-<pad name="2" x="0" y="1.905" drill="0.8128" diameter="1.8796"/>
-<pad name="1" x="-1.27" y="0" drill="0.8128" diameter="1.8796"/>
-<text x="3.175" y="0.635" size="0.4064" layer="25" ratio="10">&gt;NAME</text>
-<text x="3.175" y="-1.27" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="TO-220-ALT" urn="urn:adsk.eagle:footprint:39016/1" library_version="1">
-<wire x1="-5.207" y1="-1.27" x2="5.207" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="5.207" y1="14.605" x2="-5.207" y2="14.605" width="0.1524" layer="21"/>
-<wire x1="5.207" y1="-1.27" x2="5.207" y2="11.176" width="0.1524" layer="21"/>
-<wire x1="5.207" y1="11.176" x2="4.318" y2="11.176" width="0.1524" layer="21"/>
-<wire x1="4.318" y1="11.176" x2="4.318" y2="12.7" width="0.1524" layer="21"/>
-<wire x1="4.318" y1="12.7" x2="5.207" y2="12.7" width="0.1524" layer="21"/>
-<wire x1="5.207" y1="12.7" x2="5.207" y2="14.605" width="0.1524" layer="21"/>
-<wire x1="-5.207" y1="-1.27" x2="-5.207" y2="11.176" width="0.1524" layer="21"/>
-<wire x1="-5.207" y1="11.176" x2="-4.318" y2="11.176" width="0.1524" layer="21"/>
-<wire x1="-4.318" y1="11.176" x2="-4.318" y2="12.7" width="0.1524" layer="21"/>
-<wire x1="-4.318" y1="12.7" x2="-5.207" y2="12.7" width="0.1524" layer="21"/>
-<wire x1="-5.207" y1="12.7" x2="-5.207" y2="14.605" width="0.1524" layer="21"/>
-<wire x1="-4.572" y1="-0.635" x2="4.572" y2="-0.635" width="0.0508" layer="21"/>
-<wire x1="4.572" y1="7.62" x2="4.572" y2="-0.635" width="0.0508" layer="21"/>
-<wire x1="4.572" y1="7.62" x2="-4.572" y2="7.62" width="0.0508" layer="21"/>
-<wire x1="-4.572" y1="-0.635" x2="-4.572" y2="7.62" width="0.0508" layer="21"/>
-<circle x="0" y="11.176" radius="1.8034" width="0.1524" layer="21"/>
-<circle x="0" y="11.176" radius="3.048" width="0" layer="42"/>
-<circle x="0" y="11.176" radius="3.048" width="0" layer="43"/>
-<pad name="IN" x="-2.54" y="-3.81" drill="1.016" shape="long" rot="R90"/>
-<pad name="GND" x="0" y="-3.81" drill="1.016" shape="long" rot="R90"/>
-<pad name="OUT" x="2.54" y="-3.81" drill="1.016" shape="long" rot="R90"/>
-<text x="-3.81" y="5.08" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.937" y="2.54" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-0.508" y="0" size="1.27" layer="51" ratio="10">-</text>
-<text x="-3.048" y="0" size="1.27" layer="51" ratio="10">I</text>
-<text x="2.032" y="0" size="1.27" layer="51" ratio="10">O</text>
-<rectangle x1="1.905" y1="-2.159" x2="3.175" y2="-1.27" layer="21"/>
-<rectangle x1="1.905" y1="-3.81" x2="3.175" y2="-2.159" layer="51"/>
-<rectangle x1="-0.635" y1="-2.159" x2="0.635" y2="-1.27" layer="21"/>
-<rectangle x1="-3.175" y1="-2.159" x2="-1.905" y2="-1.27" layer="21"/>
-<rectangle x1="-0.635" y1="-3.81" x2="0.635" y2="-2.159" layer="51"/>
-<rectangle x1="-3.175" y1="-3.81" x2="-1.905" y2="-2.159" layer="51"/>
-<hole x="0" y="11.176" drill="3.302"/>
-</package>
-<package name="TO-252" urn="urn:adsk.eagle:footprint:39012/1" library_version="1">
-<wire x1="3.2766" y1="3.8354" x2="3.277" y2="-2.159" width="0.2032" layer="21"/>
-<wire x1="3.277" y1="-2.159" x2="-3.277" y2="-2.159" width="0.2032" layer="21"/>
-<wire x1="-3.277" y1="-2.159" x2="-3.2766" y2="3.8354" width="0.2032" layer="21"/>
-<wire x1="-3.277" y1="3.835" x2="3.2774" y2="3.8346" width="0.2032" layer="51"/>
-<wire x1="-2.5654" y1="3.937" x2="-2.5654" y2="4.6482" width="0.2032" layer="51"/>
-<wire x1="-2.5654" y1="4.6482" x2="-2.1082" y2="5.1054" width="0.2032" layer="51"/>
-<wire x1="-2.1082" y1="5.1054" x2="2.1082" y2="5.1054" width="0.2032" layer="51"/>
-<wire x1="2.1082" y1="5.1054" x2="2.5654" y2="4.6482" width="0.2032" layer="51"/>
-<wire x1="2.5654" y1="4.6482" x2="2.5654" y2="3.937" width="0.2032" layer="51"/>
-<wire x1="2.5654" y1="3.937" x2="-2.5654" y2="3.937" width="0.2032" layer="51"/>
-<rectangle x1="-2.7178" y1="-5.1562" x2="-1.8542" y2="-2.2606" layer="51"/>
-<rectangle x1="1.8542" y1="-5.1562" x2="2.7178" y2="-2.2606" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.0226" x2="0.4318" y2="-2.2606" layer="21"/>
-<smd name="1" x="-2.28" y="-4.8" dx="1" dy="1.6" layer="1"/>
-<smd name="2" x="2.28" y="-4.8" dx="1" dy="1.6" layer="1"/>
-<smd name="3" x="0" y="2.5" dx="5.4" dy="6.2" layer="1"/>
-<text x="-3.81" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="5.08" y="-2.54" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<polygon width="0.1998" layer="51">
-<vertex x="-2.5654" y="3.937"/>
-<vertex x="-2.5654" y="4.6482"/>
-<vertex x="-2.1082" y="5.1054"/>
-<vertex x="2.1082" y="5.1054"/>
-<vertex x="2.5654" y="4.6482"/>
-<vertex x="2.5654" y="3.937"/>
-</polygon>
-</package>
 </packages>
 <packages3d>
 <package3d name="78XXL" urn="urn:adsk.eagle:package:39065/1" type="box" library_version="1">
 <description>VOLTAGE REGULATOR</description>
-</package3d>
-<package3d name="TO220-IGO" urn="urn:adsk.eagle:package:39063/1" type="box" library_version="1">
-</package3d>
-<package3d name="TO-92" urn="urn:adsk.eagle:package:39064/1" type="box" library_version="1">
-<description>TO 92</description>
-</package3d>
-<package3d name="TO-220-ALT" urn="urn:adsk.eagle:package:39066/1" type="box" library_version="1">
-</package3d>
-<package3d name="TO-252" urn="urn:adsk.eagle:package:39067/1" type="box" library_version="1">
 </package3d>
 </packages3d>
 <symbols>
@@ -12212,130 +12104,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:39065/1"/>
 </package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="V_REG_78XX" urn="urn:adsk.eagle:component:39109/1" prefix="U" uservalue="yes" library_version="1">
-<description>&lt;b&gt;Voltage Regulator&lt;/b&gt;
-Standard 78xx regulator. IGO (Input Ground Output). 
-
-Spark Fun Electronics SKU : COM-00107</description>
-<gates>
-<gate name="G$1" symbol="78XX" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SIDE" package="78XXL">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="IN" pad="IN"/>
-<connect gate="G$1" pin="OUT" pad="OUT"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:39065/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SINK" package="TO220-IGO">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="IN" pad="IN"/>
-<connect gate="G$1" pin="OUT" pad="OUT"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:39063/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TO-92_UNTESTED" package="TO-92">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="3"/>
-<connect gate="G$1" pin="OUT" pad="1"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:39064/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-TO-220" package="TO-220-ALT">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="IN" pad="IN"/>
-<connect gate="G$1" pin="OUT" pad="OUT"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:39066/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="VREG-08450" constant="no"/>
-<attribute name="SF_ID" value="COM-00107" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="7812" package="TO-252">
-<connects>
-<connect gate="G$1" pin="GND" pad="3"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:39067/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="VREG-12370" constant="no"/>
-<attribute name="VALUE" value="+12v" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="SparkFun-PowerSymbols" urn="urn:adsk.eagle:library:530">
-<description>&lt;h3&gt;SparkFun Power Symbols&lt;/h3&gt;
-This library contains power, ground, and voltage-supply symbols.
-&lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="5V" urn="urn:adsk.eagle:symbol:39412/1" library_version="1">
-<description>&lt;h3&gt;5V Voltage Supply&lt;/h3&gt;</description>
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<pin name="5V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="5V" urn="urn:adsk.eagle:component:39433/1" prefix="SUPPLY" library_version="1">
-<description>&lt;h3&gt;5V Supply Symbol&lt;/h3&gt;
-&lt;p&gt;Power supply symbol for a specifically-stated 5V source.&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="5V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -12475,13 +12243,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C1" library="adafruit" deviceset="C-US" device="050-025X075" value="100nF"/>
 <part name="C2" library="adafruit" deviceset="C-US" device="050-025X075" value="10uF"/>
-<part name="U2" library="SparkFun-IC-Power" library_urn="urn:adsk.eagle:library:526" deviceset="V_REG_78XX" device="-TO-220" package3d_urn="urn:adsk.eagle:package:39066/1"/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="12V" device=""/>
-<part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="12V" device=""/>
-<part name="C3" library="adafruit" deviceset="C-US" device="050-025X075" value="10uF"/>
-<part name="C4" library="adafruit" deviceset="C-US" device="050-025X075" value="10uF"/>
-<part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="SUPPLY4" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12607,13 +12369,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND5" gate="1" x="33.02" y="116.84"/>
 <instance part="C1" gate="G$1" x="17.78" y="124.46"/>
 <instance part="C2" gate="G$1" x="55.88" y="124.46"/>
-<instance part="U2" gate="G$1" x="86.36" y="137.16"/>
 <instance part="SUPPLY1" gate="G$1" x="17.78" y="144.78"/>
-<instance part="SUPPLY3" gate="G$1" x="71.12" y="144.78"/>
-<instance part="C3" gate="G$1" x="71.12" y="124.46"/>
-<instance part="C4" gate="G$1" x="99.06" y="124.46"/>
-<instance part="GND6" gate="1" x="86.36" y="111.76"/>
-<instance part="SUPPLY4" gate="G$1" x="99.06" y="144.78"/>
 </instances>
 <busses>
 </busses>
@@ -12648,11 +12404,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="X1" gate="G$1" pin="G1"/>
 <wire x1="-88.9" y1="129.54" x2="-88.9" y2="121.92" width="0.1524" layer="91"/>
 <label x="-88.9" y="121.92" size="1.016" layer="91" rot="R270" xref="yes"/>
-</segment>
-<segment>
-<pinref part="X1" gate="G$1" pin="23"/>
-<wire x1="-114.3" y1="129.54" x2="-114.3" y2="121.92" width="0.1524" layer="91"/>
-<label x="-114.3" y="121.92" size="1.016" layer="91" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="SV1" gate="G$1" pin="9"/>
@@ -12844,18 +12595,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U$1" gate="G$1" pin="GND"/>
 <wire x1="33.02" y1="129.54" x2="33.02" y2="119.38" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="C3" gate="G$1" pin="2"/>
-<pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="71.12" y1="119.38" x2="71.12" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="114.3" x2="86.36" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="86.36" y1="114.3" x2="99.06" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="114.3" x2="99.06" y2="119.38" width="0.1524" layer="91"/>
-<junction x="86.36" y="114.3"/>
-<pinref part="U2" gate="G$1" pin="GND"/>
-<wire x1="86.36" y1="129.54" x2="86.36" y2="114.3" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="12V" class="1">
 <segment>
@@ -12879,13 +12618,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="SUPPLY1" gate="G$1" pin="12V"/>
 </segment>
 <segment>
-<pinref part="C3" gate="G$1" pin="1"/>
-<pinref part="SUPPLY3" gate="G$1" pin="12V"/>
-<wire x1="71.12" y1="127" x2="71.12" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="IN"/>
-<wire x1="71.12" y1="137.16" x2="71.12" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="137.16" x2="71.12" y2="137.16" width="0.1524" layer="91"/>
-<junction x="71.12" y="137.16"/>
+<pinref part="X1" gate="G$1" pin="23"/>
+<wire x1="-114.3" y1="129.54" x2="-114.3" y2="121.92" width="0.1524" layer="91"/>
+<label x="-114.3" y="121.92" size="0.8128" layer="91" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -14491,17 +14226,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="SV3" gate="G$1" pin="12"/>
 <wire x1="-33.02" y1="73.66" x2="-25.4" y2="73.66" width="0.1524" layer="91"/>
 <label x="-25.4" y="73.66" size="1.016" layer="91" xref="yes"/>
-</segment>
-</net>
-<net name="5V" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="OUT"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="93.98" y1="137.16" x2="99.06" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="137.16" x2="99.06" y2="127" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="137.16" x2="99.06" y2="144.78" width="0.1524" layer="91"/>
-<junction x="99.06" y="137.16"/>
-<pinref part="SUPPLY4" gate="G$1" pin="5V"/>
 </segment>
 </net>
 </nets>
