@@ -12258,9 +12258,9 @@ Spark Fun Electronics SKU : COM-00107</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.2032" drill="0">
+<class number="0" name="default" width="0.254" drill="0">
 </class>
-<class number="1" name="12V" width="0.508" drill="0">
+<class number="1" name="12V" width="1.3716" drill="0">
 </class>
 <class number="2" name="5V" width="0.508" drill="0">
 </class>
