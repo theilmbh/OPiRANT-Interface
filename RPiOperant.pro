@@ -2,24 +2,24 @@ EAGLE AutoRouter Statistics:
 
 Job           : /home/brad/eagle/RPiOperant/RPiOperant.brd
 
-Start at      : 12:24:14 (2/15/18)
-End at        : 12:33:16 (2/15/18)
-Elapsed time  : 00:08:59
+Start at      : 11:23:21 (2/20/18)
+End at        : 11:32:22 (2/20/18)
+Elapsed time  : 00:08:56
 
-Signals       :   124   RoutingGrid: 4 mil  Layers: 2
-Connections   :   217   predefined:  41 ( 0 Vias )
+Signals       :   126   RoutingGrid: 4 mil  Layers: 2
+Connections   :   223   predefined:  42 ( 0 Vias )
 
 Router memory :   5598720
 
 Passname          : TopRouter     Route Optimize1 Optimize2 Optimize3 Optimize4 Optimize5 Optimize6 Optimize7 Optimize8 Optimize9Optimize10Optimize11Optimize12
 
-Time per pass     :  00:00:33  00:04:57  00:00:17  00:00:20  00:00:19  00:00:19  00:00:20  00:00:18  00:00:18  00:00:17  00:00:15  00:00:16  00:00:15  00:00:15
-Number of Ripups  :         0       344         0         0         0         0         0         0         0         0         0         0         0         0
-max. Level        :         0         6         0         0         0         0         0         0         0         0         0         0         0         0
-max. Total        :         0        42         0         0         0         0         0         0         0         0         0         0         0         0
+Time per pass     :  00:00:34  00:03:14  00:00:27  00:00:24  00:00:22  00:00:20  00:00:33  00:00:38  00:00:38  00:00:37  00:00:24  00:00:15  00:00:15  00:00:15
+Number of Ripups  :         0       221         0         0         0         0         0         0         0         0         0         0         0         0
+max. Level        :         0         4         0         0         0         0         0         0         0         0         0         0         0         0
+max. Total        :         0        45         0         0         0         0         0         0         0         0         0         0         0         0
 
-Routed            :        62       176       175       176       176       176       176       176       176       176       176       176       176       176
-Vias              :         0       659       538       429       373       341       311       298       284       275       271       268       267       267
-Resolution        :    47.5 %   100.0 %    99.5 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
+Routed            :        57       181       181       181       181       181       181       181       181       181       181       181       181       181
+Vias              :         0       597       510       423       362       329       306       299       295       281       264       261       261       260
+Resolution        :    44.4 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
 Final             : 100.0% finished

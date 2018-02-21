@@ -10749,6 +10749,70 @@ Source: 3M</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="con-molex" urn="urn:adsk.eagle:library:165">
+<description>&lt;b&gt;Molex Connectors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="22-23-2041" library_version="1">
+<description>.100" (2.54mm) Center Header - 4 Pin</description>
+<wire x1="-5.08" y1="3.175" x2="5.08" y2="3.175" width="0.254" layer="21"/>
+<wire x1="5.08" y1="3.175" x2="5.08" y2="1.27" width="0.254" layer="21"/>
+<wire x1="5.08" y1="1.27" x2="5.08" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="5.08" y1="-3.175" x2="-5.08" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="-5.08" y1="-3.175" x2="-5.08" y2="1.27" width="0.254" layer="21"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="3.175" width="0.254" layer="21"/>
+<wire x1="-5.08" y1="1.27" x2="5.08" y2="1.27" width="0.254" layer="21"/>
+<pad name="1" x="-3.81" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="2" x="-1.27" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="3" x="1.27" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="4" x="3.81" y="0" drill="1" shape="long" rot="R90"/>
+<text x="-5.08" y="3.81" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<text x="-5.08" y="-5.08" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="MV" library_version="1">
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
+<text x="-0.762" y="1.397" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+<symbol name="M" library_version="1">
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
+<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="22-23-2041" prefix="X" library_version="1">
+<description>.100" (2.54mm) Center Header - 4 Pin</description>
+<gates>
+<gate name="-1" symbol="MV" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="M" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="M" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="-4" symbol="M" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="22-23-2041">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="MOLEX" constant="no"/>
+<attribute name="MPN" value="22-23-2041" constant="no"/>
+<attribute name="OC_FARNELL" value="1462920" constant="no"/>
+<attribute name="OC_NEWARK" value="38C0355" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -10875,6 +10939,11 @@ Source: 3M</description>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="12V" device=""/>
 <part name="X3" library="con-3m" library_urn="urn:adsk.eagle:library:119" deviceset="2550-" device="" package3d_urn="urn:adsk.eagle:package:5594/1"/>
 <part name="X1" library="con-3m" library_urn="urn:adsk.eagle:library:119" deviceset="2516-" device="" package3d_urn="urn:adsk.eagle:package:5574/1"/>
+<part name="X2" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2041" device=""/>
+<part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="+3V7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="R18" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:25942/1" value="330"/>
+<part name="R19" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:25942/1" value="330"/>
 </parts>
 <sheets>
 <sheet>
@@ -11056,6 +11125,14 @@ Source: 3M</description>
 <instance part="X1" gate="-14" x="157.48" y="40.64"/>
 <instance part="X1" gate="-15" x="157.48" y="38.1"/>
 <instance part="X1" gate="-16" x="157.48" y="35.56"/>
+<instance part="X2" gate="-1" x="-91.44" y="167.64"/>
+<instance part="X2" gate="-2" x="-91.44" y="165.1"/>
+<instance part="X2" gate="-3" x="-91.44" y="162.56"/>
+<instance part="X2" gate="-4" x="-91.44" y="160.02"/>
+<instance part="GND5" gate="1" x="-101.6" y="149.86"/>
+<instance part="+3V7" gate="G$1" x="-127" y="182.88"/>
+<instance part="R18" gate="G$1" x="-119.38" y="162.56" rot="R180"/>
+<instance part="R19" gate="G$1" x="-119.38" y="170.18" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -11256,6 +11333,16 @@ Source: 3M</description>
 <pinref part="X1" gate="-16" pin="KL"/>
 <wire x1="162.56" y1="35.56" x2="167.64" y2="35.56" width="0.1524" layer="91"/>
 <label x="167.64" y="35.56" size="1.27" layer="91" xref="yes"/>
+</segment>
+<segment>
+<pinref part="X2" gate="-4" pin="S"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="-93.98" y1="160.02" x2="-101.6" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="-101.6" y1="160.02" x2="-101.6" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-1" pin="S"/>
+<wire x1="-93.98" y1="167.64" x2="-101.6" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="-101.6" y1="167.64" x2="-101.6" y2="160.02" width="0.1524" layer="91"/>
+<junction x="-101.6" y="160.02"/>
 </segment>
 </net>
 <net name="12V" class="1">
@@ -11548,6 +11635,12 @@ Source: 3M</description>
 <wire x1="-200.66" y1="162.56" x2="-198.12" y2="162.56" width="0.1524" layer="91"/>
 <label x="-198.12" y="162.56" size="1.27" layer="91" xref="yes"/>
 </segment>
+<segment>
+<pinref part="+3V7" gate="G$1" pin="+3V3"/>
+<wire x1="-127" y1="180.34" x2="-127" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="-127" y1="170.18" x2="-124.46" y2="170.18" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="HOPPER_IR_GPIO" class="0">
 <segment>
@@ -11834,6 +11927,12 @@ Source: 3M</description>
 <pinref part="SV3" gate="G$1" pin="17"/>
 <wire x1="-48.26" y1="66.04" x2="-58.42" y2="66.04" width="0.1524" layer="91"/>
 <label x="-58.42" y="66.04" size="1.016" layer="91" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R18" gate="G$1" pin="2"/>
+<wire x1="-124.46" y1="162.56" x2="-134.62" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="-134.62" y1="162.56" x2="-134.62" y2="180.34" width="0.1524" layer="91"/>
+<label x="-134.62" y="180.34" size="1.778" layer="91" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="LOADCELLE+" class="0">
@@ -12897,6 +12996,22 @@ Source: 3M</description>
 <pinref part="X3" gate="-4" pin="KL"/>
 <wire x1="-200.66" y1="160.02" x2="-198.12" y2="160.02" width="0.1524" layer="91"/>
 <label x="-198.12" y="160.02" size="1.27" layer="91" xref="yes"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="-114.3" y1="170.18" x2="-111.76" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="-111.76" y1="170.18" x2="-111.76" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-2" pin="S"/>
+<wire x1="-111.76" y1="165.1" x2="-93.98" y2="165.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$31" class="0">
+<segment>
+<pinref part="R18" gate="G$1" pin="1"/>
+<pinref part="X2" gate="-3" pin="S"/>
+<wire x1="-114.3" y1="162.56" x2="-93.98" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
