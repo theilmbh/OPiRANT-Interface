@@ -11491,6 +11491,11 @@ Source: 3M</description>
 <wire x1="-200.66" y1="154.94" x2="-198.12" y2="154.94" width="0.1524" layer="91"/>
 <label x="-198.12" y="154.94" size="1.27" layer="91" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R36" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="233.68" x2="71.12" y2="233.68" width="0.1524" layer="91"/>
+<label x="71.12" y="233.68" size="1.778" layer="91" xref="yes"/>
+</segment>
 </net>
 <net name="RIGHT_LED" class="0">
 <segment>
@@ -12431,6 +12436,11 @@ Source: 3M</description>
 <wire x1="58.42" y1="157.48" x2="71.12" y2="157.48" width="0.1524" layer="91"/>
 <label x="71.12" y="157.48" size="1.778" layer="91" xref="yes"/>
 </segment>
+<segment>
+<pinref part="X3" gate="-4" pin="KL"/>
+<wire x1="-200.66" y1="160.02" x2="-198.12" y2="160.02" width="0.1524" layer="91"/>
+<label x="-198.12" y="160.02" size="1.016" layer="91" xref="yes"/>
+</segment>
 </net>
 <net name="RGB_CUE_G" class="0">
 <segment>
@@ -12466,13 +12476,6 @@ Source: 3M</description>
 <pinref part="X3" gate="-14" pin="KL"/>
 <wire x1="-200.66" y1="147.32" x2="-198.12" y2="147.32" width="0.1524" layer="91"/>
 <label x="-198.12" y="147.32" size="1.27" layer="91" xref="yes"/>
-</segment>
-</net>
-<net name="CENTNER_LED" class="0">
-<segment>
-<pinref part="R36" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="233.68" x2="71.12" y2="233.68" width="0.1524" layer="91"/>
-<label x="71.12" y="233.68" size="1.016" layer="91" xref="yes"/>
 </segment>
 </net>
 <net name="LED_1" class="0">
@@ -12989,13 +12992,6 @@ Source: 3M</description>
 <pinref part="SV3" gate="G$1" pin="12"/>
 <wire x1="-33.02" y1="73.66" x2="-25.4" y2="73.66" width="0.1524" layer="91"/>
 <label x="-25.4" y="73.66" size="1.016" layer="91" xref="yes"/>
-</segment>
-</net>
-<net name="RGB_CUE_B\" class="0">
-<segment>
-<pinref part="X3" gate="-4" pin="KL"/>
-<wire x1="-200.66" y1="160.02" x2="-198.12" y2="160.02" width="0.1524" layer="91"/>
-<label x="-198.12" y="160.02" size="1.27" layer="91" xref="yes"/>
 </segment>
 </net>
 <net name="N$25" class="0">
